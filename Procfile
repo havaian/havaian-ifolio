@@ -1,1 +1,1 @@
-﻿start: parcel index.html $PORT
+﻿start: parcel index.html
