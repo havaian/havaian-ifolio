@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: 'Harmond';
+  src: url(./Harmond-ExtraBoldExpanded.otf) format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: white;
+  color: #000;
+}
+
+body {
+	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s linear infinite; */
+  padding-bottom: 1.5vh;
+  overscroll-behavior: inherit;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: black;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+body,
+html {
+  overscroll-behavior: none;
+}
+
+.main-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+}
+
+img {
+  background: transparent;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.contacts {
+  position: absolute;
+}
+
+.contacts a {
+  height: 72px;
+  position: absolute;
+  z-index: 100;
+}
+
+.contacts a:hover img {
+  transform: scale(110%);
+  transition: transform 200ms ease;
+}
+
+.contacts img {
+  transition: transform 200ms ease;
+  background: transparent;
+}
+
+#telegram {
+  height: 60px;
+}
+
+#mail,
+#github {
+  height: 100px;
+}
+
+#replit {
+  height: 75px;
+}
+
+.contacts #telegram-icon {
+  margin-top: 200px;
+  margin-left: 300px;
+}
+
+.contacts #mail-icon {
+  height: 100px;
+  margin-top: 100px;
+  margin-left: 1000px;
+}
+
+.contacts #github-icon {
+  height: 100px;
+  margin-top: 600px;
+  margin-left: 400px;
+}
+
+.contacts #replit-icon {
+  margin-top: 500px;
+  margin-left: 1100px;
+}
+
+.hero-header {
+  font-family: 'Azeret Mono', monospace;
+}
+
+.hero-header h1 {
+  margin-left: 2%;
+  padding-top: 10%;
+  font-size: 100px;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+	animation: gradient 15s linear infinite;
+  text-align: center;
+  line-height : 150px;
+  text-transform: uppercase;
+  mix-blend-mode: difference;
+  user-select: none;
+}
+
+.hero-header h2 {
+  margin-top: 7%;
+  color: white;
+  text-align: center;
+  mix-blend-mode: difference;
+}
+
+.hero-header h3 {
+  margin-left: 10%;
+  width: 80%;
+  margin-top: 5.5%;
+  color: white;
+  text-align: center;
+  mix-blend-mode: difference;
+}
+
+/* .hero-header span {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+	animation: gradient 15s linear infinite;
+} */
+
+.main-content {
+  position: relative;
+  will-change: transform;
+}
+
+.section-title {
+  margin-top: 15%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+	animation: gradient 15s linear infinite;
+  text-align: center;
+  font-size: 64px;
+  text-transform: uppercase;
+  font-family: 'Azeret Mono', monospace;
+  mix-blend-mode: difference;
+  user-select: none;
+
+  grid-column: 2 / 9;
+  grid-row: 1 / 1;
+}
+
+.projects-wrapper {
+  margin-top: 5%;
+  grid-row: 1 / 2;
+  display: grid;
+}
+
+.projects-wrapper span {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+	animation: gradient 15s linear infinite;
+}
+
+.project-1, 
+.project-2,
+.project-3,
+.project-4,
+.project-5 {
+  margin-top: 10%;
+  margin-left: 15%;
+  width: 70%;
+}
+
+.project-title {
+  color: white;
+  font-size: 72px;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+  mix-blend-mode: difference;
+}
+
+.project-img {
+  margin-top: 5%;
+  width: 100%;
+}
+
+.project-text {
+  margin-top: 5%;
+  color: white;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  mix-blend-mode: difference;
+}
+
+.project-number {
+  position: absolute;
+  color: white;
+  font-size: 72px;
+  font-weight: 900;
+  font-family: 'Harmond', sans-serif;
+  mix-blend-mode: difference;
+  user-select: none;
+}
+
+.project-link {
+  position: absolute;
+  font-size: 64px;
+  color: #666;
+  mix-blend-mode: difference;
+  user-select: none;
+  transition: all 200ms ease-in-out;
+}
+
+.project-link:hover {
+  color: #fff;
+  transition: all 200ms ease-in-out;
+}
+
+.project-1 .project-number {
+  margin-left: 75%;
+  margin-top: 10%;
+}
+
+.project-1 .project-link {
+  margin-left: 75.7%;
+  margin-top: 17%;
+}
+
+.project-2 .project-number {
+  margin-left: -11%;
+  margin-top: 20%;
+}
+
+.project-2 .project-link {
+  margin-left: -9.5%;
+  margin-top: 27%;
+}
+
+.project-3 .project-number {
+  margin-left: 75%;
+  margin-top: 30%;
+}
+
+.project-3 .project-link {
+  margin-left: 76.7%;
+  margin-top: 37%;
+}
+
+.project-4 .project-number {
+  margin-left: -11%;
+  margin-top: 10%;
+}
+
+.project-4 .project-link {
+  margin-left: -9.5%;
+  margin-top: 17%;
+}
+
+.project-5 .project-number {
+  margin-left: 75%;
+  margin-top: 30%;
+}
+
+.project-5 .project-link {
+  margin-left: 76.5%;
+  margin-top: 37%;
+}
+
+.project-stack-title {
+  color: white;
+  margin-top: 5%;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+}
+
+.project-stack {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  font-size: 48px;
+  user-select: none;
+}
+
+.project-1 .project-stack {
+  width: 100%;
+}
+
+.project-2 .project-stack {
+  width: 35%;
+}
+
+.project-5 .project-stack {
+  padding-bottom: 5%;
+}
+
+.project-stack i {
+  cursor: pointer;
+  transition: color 200ms ease-in-out;
+}
+
+.project-stack p {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+
+
+.html:hover {
+  color: orange;
+  transition: color 100ms ease;
+}
+
+.css:hover {
+  color: lightskyblue;
+  transition: color 100ms ease;
+}
+
+.js:hover {
+  color: yellow;
+  transition: color 100ms ease;
+}
+
+.node-js:hover {
+  color: green;
+  transition: color 100ms ease;
+}
+
+.mongo-db:hover {
+  color: green;
+  transition: color 100ms ease;
+}
+ 
+.discord-js:hover {
+  color: #7289DA;
+  transition: color 100ms ease;
+}
+
+.rest-api:hover,
+.replit:hover,
+.replit-db:hover,
+.airtable:hover,
+.airtable-js:hover,
+.telegraf-js:hover {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+	animation: gradient 5s linear infinite;
+  transition: all 200ms ease-in-out;
+}
+
+canvas {
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
