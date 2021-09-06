@@ -151,7 +151,7 @@ class MeshItem{
         this.getDimensions();
         this.mesh.position.set(this.offset.x, this.offset.y, 0);
 		    this.mesh.scale.set(this.sizes.x, this.sizes.y, 1);
-        this.uniforms.uOffset.value.set(this.offset.x * 0.0, -(target- current) * 0.0003 );
+        this.uniforms.uOffset.value.set(this.offset.x * 0.0, -(target- current) * 0.0001 );
     }
 }
 
