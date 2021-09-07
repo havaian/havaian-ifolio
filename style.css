@@ -46,11 +46,13 @@ html {
   background-color: #000;
 }
 
-img {
+img /* applying necessary styles to all images */ {
   background: transparent;
   overflow: hidden;
   visibility: hidden;
 }
+
+/* LANDING MEDIA (CONTACT ICONS, HEADER, SECTIONS) */
 
 .contacts {
   position: absolute;
@@ -86,25 +88,25 @@ img {
 }
 
 .contacts #telegram-icon {
-  margin-top: 200px;
-  margin-left: 300px;
+  margin-top: 250px;
+  margin-left: 550px;
 }
 
 .contacts #mail-icon {
   height: 100px;
-  margin-top: 100px;
-  margin-left: 1000px;
+  margin-top: 150px;
+  margin-left: 1150px;
 }
 
 .contacts #github-icon {
   height: 100px;
   margin-top: 600px;
-  margin-left: 400px;
+  margin-left: 550px;
 }
 
 .contacts #replit-icon {
-  margin-top: 500px;
-  margin-left: 1100px;
+  margin-top: 550px;
+  margin-left: 1200px;
 }
 
 .hero-header {
@@ -177,6 +179,10 @@ img {
   grid-row: 1 / 1;
 }
 
+/*  */
+
+/* WRAPPERS */
+
 .projects-wrapper {
   margin-top: 5%;
   grid-row: 1 / 2;
@@ -202,17 +208,16 @@ img {
   width: 70%;
 }
 
+/*  */
+
+/* PROJECT MEDIA (TEXT, IMG) */
+
 .project-title {
   color: white;
   font-size: 72px;
   font-weight: 900;
   font-family: 'Lato', sans-serif;
   mix-blend-mode: difference;
-}
-
-.project-img {
-  margin-top: 5%;
-  width: 100%;
 }
 
 .project-text {
@@ -223,6 +228,15 @@ img {
   mix-blend-mode: difference;
 }
 
+.project-img {
+  margin-top: 5%;
+  width: 100%;
+}
+
+/*  */
+
+/* PROJECT NUMBERS */
+
 .project-number {
   position: absolute;
   color: white;
@@ -232,6 +246,35 @@ img {
   mix-blend-mode: difference;
   user-select: none;
 }
+
+.project-1 .project-number {
+  margin-left: 75%;
+  margin-top: 10%;
+}
+
+.project-2 .project-number {
+  margin-left: -11%;
+  margin-top: 20%;
+}
+
+.project-3 .project-number {
+  margin-left: 75%;
+  margin-top: 30%;
+}
+
+.project-4 .project-number {
+  margin-left: -11%;
+  margin-top: 10%;
+}
+
+.project-5 .project-number {
+  margin-left: 75%;
+  margin-top: 30%;
+}
+
+/*  */
+
+/* PROJECT LINKS */
 
 .project-link {
   position: absolute;
@@ -247,55 +290,34 @@ img {
   transition: all 200ms ease-in-out;
 }
 
-.project-1 .project-number {
-  margin-left: 75%;
-  margin-top: 10%;
-}
-
 .project-1 .project-link {
   margin-left: 75.7%;
-  margin-top: 17%;
-}
-
-.project-2 .project-number {
-  margin-left: -11%;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .project-2 .project-link {
-  margin-left: -9.5%;
-  margin-top: 27%;
-}
-
-.project-3 .project-number {
-  margin-left: 75%;
-  margin-top: 30%;
+  margin-left: -9.7%;
+  margin-top: 25%;
 }
 
 .project-3 .project-link {
-  margin-left: 76.7%;
-  margin-top: 37%;
-}
-
-.project-4 .project-number {
-  margin-left: -11%;
-  margin-top: 10%;
+  margin-left: 76.2%;
+  margin-top: 35%;
 }
 
 .project-4 .project-link {
-  margin-left: -9.5%;
-  margin-top: 17%;
-}
-
-.project-5 .project-number {
-  margin-left: 75%;
-  margin-top: 30%;
+  margin-left: -9.9%;
+  margin-top: 15%;
 }
 
 .project-5 .project-link {
-  margin-left: 76.5%;
-  margin-top: 37%;
+  margin-left: 76.2%;
+  margin-top: 35%;
 }
+
+/*  */
+
+/* TECH. STACK */
 
 .project-stack-title {
   color: white;
@@ -339,7 +361,7 @@ img {
   transition: all 200ms ease-in-out;
 }
 
-
+/* TECH. STACK ICONS ON HOVER */
 
 .html:hover {
   color: orange;
@@ -386,12 +408,20 @@ img {
   transition: all 200ms ease-in-out;
 }
 
+/*  */
+
+/* ASSIGNING STYLES TO CANVAS CREATED IN JS */
+
 canvas {
   position: fixed;
   z-index: -10;
   top: 0;
   left: 0;
 }
+
+/*  */
+
+/* ANIMATION FOR HERO HEADER */
 
 @keyframes gradient {
 	0% {
@@ -403,4 +433,512 @@ canvas {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+/*  */
+
+/* MEDIA QUERIES */
+
+/* Very small phones */
+
+
+
+/* Large desktop */
+@media (max-width: 1200px) { 
+
+  /* CONTACT ICONS */
+  
+  .contacts #telegram-icon {
+    margin-top: 200px;
+    margin-left: 150px;
+  }
+  
+  .contacts #mail-icon {
+    margin-top: 100px;
+    margin-left: 750px;
+  }
+  
+  .contacts #github-icon {
+    margin-top: 550px;
+    margin-left: 200px;
+  }
+  
+  .contacts #replit-icon {
+    margin-top: 450px;
+    margin-left: 800px;
+  }
+
+  /*  */
+
+  /* PROJECT NUMBERS */
+
+  .project-1 .project-number {
+    margin-left: 74%;
+    margin-top: 10%;
+  }
+  
+  .project-2 .project-number {
+    margin-left: -12.5%;
+    margin-top: 20%;
+  }
+  
+  .project-3 .project-number {
+    margin-left: 72.5%;
+    margin-top: 30%;
+  }
+  
+  .project-4 .project-number {
+    margin-left: -12.5%;
+    margin-top: 10%;
+  }
+  
+  .project-5 .project-number {
+    margin-left: 72.5%;
+    margin-top: 30%;
+  }
+
+  /*  */
+
+  /* PROJECT LINKS */
+
+  .project-1 .project-link {
+    margin-left: 74.7%;
+    margin-top: 17.5%;
+  }
+  
+  .project-2 .project-link {
+    margin-left: -10.5%;
+    margin-top: 27.5%;
+  }
+  
+  .project-3 .project-link {
+    margin-left: 75%;
+    margin-top: 37.5%;
+  }
+  
+  .project-4 .project-link {
+    margin-left: -10.5%;
+    margin-top: 17.5%;
+  }
+  
+  .project-5 .project-link {
+    margin-left: 74.7%;
+    margin-top: 37.5%;
+  }
+
+  /*  */
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (max-width: 979px) { 
+
+  /* HERO HEADER */
+
+  .hero-header h1 {
+    padding-top: 25%;
+  }
+
+  /*  */
+
+  /* CONTACT ICONS */
+  
+  .contacts #telegram-icon {
+    top: -125px;
+    left: -50px;
+  }
+  
+  .contacts #mail-icon {
+    top: -50px;
+    left: -160px;
+  }
+  
+  .contacts #github-icon {
+    top: -495px;
+    left: 50px;
+  }
+  
+  .contacts #replit-icon {
+    top: -385px;
+    left: -360px;
+  }
+
+  /*  */
+
+  /* PROJECT NUMBERS */
+
+  .project-1 .project-number {
+    left: 5%;
+  }
+  
+  .project-2 .project-number {
+    left: 20.5%;
+  }
+  
+  .project-3 .project-number {
+    left: 5%;
+  }
+  
+  .project-4 .project-number {
+    left: 20.5%;
+  }
+  
+  .project-5 .project-number {
+    left: 5.3%;
+  }
+
+  /*  */
+
+  /* PROJECT LINKS */
+
+  .project-1 .project-link {
+    left: 5.5%;
+    top: 23.2%;
+  }
+  
+  .project-2 .project-link {
+    left: 21%;
+    top: 42.2%;
+  }
+  
+  .project-3 .project-link {
+    left: 5.5%;
+    top: 58.2%;
+  }
+  
+  .project-4 .project-link {
+    left: 21%;
+    top: 72.4%;
+  }
+  
+  .project-5 .project-link {
+    left: 5.5%;
+    top: 87%;
+  }
+
+  /*  */
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+
+    /* HEADERS */
+
+  .hero-header h1 {
+    padding-top: 35%;
+    font-size: 70px;
+    line-height: 150px;
+  }
+
+  .hero-header h2 {
+    margin-top: 20%;
+  }
+
+  .hero-header h3 {
+    margin-top: 20%;
+    line-height: 50px;
+  }
+
+  .section-title {
+    margin-top: 35%;
+    font-size: 48px;
+  }
+
+  .project-title {
+    font-size: 55px;
+    padding-top: 25%;
+    padding-bottom: 5%;
+  }
+
+  /*  */
+
+  /* CONTACT ICONS */
+  
+  .contacts #telegram-icon {
+    top: -155px;
+    left: -100px;
+  }
+  
+  .contacts #mail-icon {
+    top: -75px;
+    left: -455px;
+  }
+  
+  .contacts #github-icon {
+    top: -525px;
+    left: -80px;
+  }
+  
+  .contacts #replit-icon {
+    top: -413px;
+    left: -575px;
+  }
+
+  /*  */
+
+  /* CONTACT ICONS SIZES */
+
+  #telegram {
+    height: 40px;
+  }
+
+  #mail,
+  #github {
+    height: 80px;
+  }
+
+  #replit {
+    height: 55px;
+  }
+
+  /*  */
+
+  /* PROJECT NUMBERS */
+
+  .project-number {
+    font-size: 48px;
+  }
+
+  .project-1 .project-number {
+    left: 5%;
+  }
+  
+  .project-2 .project-number {
+    left: 19.5%;
+  }
+  
+  .project-3 .project-number {
+    top: 56%;
+    left: 5%;
+  }
+  
+  .project-4 .project-number {
+    left: 19%;
+  }
+  
+  .project-5 .project-number {
+    left: 5.3%;
+    top: 86%;
+  }
+
+  /*  */
+
+  /* PROJECT LINKS */
+
+  .project-link {
+    font-size: 48px;
+    color: rgb(255, 255, 255, 0.9);
+  }
+
+  .project-1 .project-link {
+    left: 5.5%;
+    top: 22%;
+  }
+  
+  .project-2 .project-link {
+    left: 20%;
+    top: 42.2%;
+  }
+  
+  .project-3 .project-link {
+    left: 5.5%;
+    top: 56.2%;
+  }
+  
+  .project-4 .project-link {
+    left: 19.5%;
+    top: 72.5%;
+  }
+  
+  .project-5 .project-link {
+    left: 5.5%;
+    top: 86.2%;
+  }
+
+  /*  */
+
+  /* PROJECT STACK */
+
+  .project-stack {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: start;
+    grid-template-columns: 50% 50%;
+  }
+
+  .project-2 .project-stack {
+    width: 100%;
+  }
+
+  .project-stack i,
+  .project-stack p {
+    justify-self: center;
+    font-size: 30px;
+    padding-bottom: 50px;
+  }
+
+  /*  */
+
+}
+
+@media (max-width: 375px) { 
+
+  /* HEADERS */
+
+.hero-header h1 {
+  padding-top: 35%;
+  font-size: 50px;
+  line-height: 150px;
+}
+
+.hero-header h2 {
+  margin-top: 15%;
+}
+
+.hero-header h3 {
+  margin-top: 15%;
+}
+
+.section-title {
+  margin-top: 25%;
+}
+
+.project-title {
+  font-size: 55px;
+  padding-top: 25%;
+  padding-bottom: 15%;
+}
+
+/*  */
+
+/* CONTACT ICONS */
+
+.contacts #telegram-icon {
+  top: -130px;
+  left: -110px;
+}
+
+.contacts #mail-icon {
+  top: -50px;
+  left: -545px;
+}
+
+.contacts #github-icon {
+  top: -500px;
+  left: -90px;
+}
+
+.contacts #replit-icon {
+  top: -388px;
+  left: -495px;
+}
+
+/*  */
+
+/* CONTACT ICONS SIZES */
+
+#telegram {
+  height: 40px;
+}
+
+#mail,
+#github {
+  height: 80px;
+}
+
+#replit {
+  height: 55px;
+}
+
+/*  */
+
+/* PROJECT NUMBERS */
+
+.project-number {
+  font-size: 48px;
+}
+
+.project-1 .project-number {
+  left: 5%;
+}
+
+.project-2 .project-number {
+  left: 19.5%;
+}
+
+.project-3 .project-number {
+  top: 56%;
+  left: 5%;
+}
+
+.project-4 .project-number {
+  left: 19%;
+}
+
+.project-5 .project-number {
+  left: 5.3%;
+  top: 86%;
+}
+
+/*  */
+
+/* PROJECT LINKS */
+
+.project-link {
+  font-size: 48px;
+  color: rgb(255, 255, 255, 0.9);
+}
+
+.project-1 .project-link {
+  left: 5.5%;
+  top: 21%;
+}
+
+.project-2 .project-link {
+  left: 20%;
+  top: 41.6%;
+}
+
+.project-3 .project-link {
+  left: 5.5%;
+  top: 56.3%;
+}
+
+.project-4 .project-link {
+  left: 19.5%;
+  top: 72.9%;
+}
+
+.project-5 .project-link {
+  left: 5.5%;
+  top: 86.3%;
+}
+
+/*  */
+
+/* PROJECT STACK */
+
+.project-stack {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: start;
+  grid-template-columns: 50% 50%;
+}
+
+.project-2 .project-stack {
+  width: 100%;
+}
+
+.project-stack i,
+.project-stack p {
+  justify-self: center;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
+/*  */
+
 }
