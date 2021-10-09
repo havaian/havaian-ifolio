@@ -298,6 +298,7 @@ img /* applying necessary styles to all images */ {
 .project-1 .project-link {
   margin-left: 75.7%;
   margin-top: 15%;
+  cursor: not-allowed;
 }
 
 .project-2 .project-link {
@@ -318,6 +319,7 @@ img /* applying necessary styles to all images */ {
 .project-5 .project-link {
   margin-left: 76.2%;
   margin-top: 35%;
+  cursor: not-allowed;
 }
 
 /*  */
