@@ -7,7 +7,7 @@ const scrollable = document.querySelector('.main-content');
 
 let current = 0;
 let target = 0;
-let ease = 0.15;
+let ease = 0.1;
 
 // Linear inetepolation used for smooth scrolling and image offset uniform adjustment
 
