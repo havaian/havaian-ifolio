@@ -208,6 +208,11 @@ img /* applying necessary styles to all images */ {
   width: 70%;
 }
 
+.project-1,
+.project-5 {
+  cursor: not-allowed;
+}
+
 /*  */
 
 /* PROJECT MEDIA (TEXT, IMG) */
