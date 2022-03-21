@@ -146,15 +146,6 @@ img /* applying necessary styles to all images */ {
   mix-blend-mode: difference;
 }
 
-/* .hero-header span {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-	animation: gradient 15s linear infinite;
-} */
-
 .main-content {
   position: relative;
   will-change: transform;
@@ -202,15 +193,11 @@ img /* applying necessary styles to all images */ {
 .project-2,
 .project-3,
 .project-4,
-.project-5 {
+.project-5,
+.project-6 {
   margin-top: 10%;
   margin-left: 15%;
   width: 70%;
-}
-
-.project-1,
-.project-5 {
-  cursor: not-allowed;
 }
 
 /*  */
@@ -240,86 +227,18 @@ img /* applying necessary styles to all images */ {
 
 /*  */
 
-/* PROJECT NUMBERS */
-
-.project-number {
-  position: absolute;
-  color: white;
-  font-size: 72px;
-  font-weight: 900;
-  font-family: 'Harmond', sans-serif;
-  mix-blend-mode: difference;
-  user-select: none;
-}
-
-.project-1 .project-number {
-  margin-left: 75%;
-  margin-top: 10%;
-}
-
-.project-2 .project-number {
-  margin-left: -11%;
-  margin-top: 20%;
-}
-
-.project-3 .project-number {
-  margin-left: 75%;
-  margin-top: 30%;
-}
-
-.project-4 .project-number {
-  margin-left: -11%;
-  margin-top: 10%;
-}
-
-.project-5 .project-number {
-  margin-left: 75%;
-  margin-top: 30%;
-}
-
-/*  */
-
 /* PROJECT LINKS */
 
 .project-link {
-  position: absolute;
-  font-size: 64px;
-  color: #666;
-  mix-blend-mode: difference;
-  user-select: none;
-  transition: all 200ms ease-in-out;
+  position: relative;
+  font-size: 48px;
+  color: rgb(255, 255, 255, 0.5);
+  transition: color 200ms ease-in-out;
 }
 
 .project-link:hover {
-  color: #fff;
-  transition: all 200ms ease-in-out;
-}
-
-.project-1 .project-link {
-  margin-left: 75.7%;
-  margin-top: 15%;
-  cursor: not-allowed;
-}
-
-.project-2 .project-link {
-  margin-left: -9.7%;
-  margin-top: 25%;
-}
-
-.project-3 .project-link {
-  margin-left: 76.2%;
-  margin-top: 35%;
-}
-
-.project-4 .project-link {
-  margin-left: -9.9%;
-  margin-top: 15%;
-}
-
-.project-5 .project-link {
-  margin-left: 76.2%;
-  margin-top: 35%;
-  cursor: not-allowed;
+  color: rgb(255, 255, 255, 1);
+  transition: color 200ms ease-in-out;
 }
 
 /*  */
@@ -348,7 +267,7 @@ img /* applying necessary styles to all images */ {
 }
 
 .project-2 .project-stack {
-  width: 35%;
+  width: 100%;
 }
 
 .project-5 .project-stack {
@@ -412,7 +331,7 @@ img /* applying necessary styles to all images */ {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 	animation: gradient 5s linear infinite;
-  transition: all 200ms ease-in-out;
+  transition: color 200ms ease;
 }
 
 /*  */
@@ -446,23 +365,19 @@ canvas {
 
 /* MEDIA QUERIES */
 
-/* Very small phones */
-
-
-
-/* Large desktop */
+/* Large desktops */
 @media (max-width: 1200px) { 
 
   /* CONTACT ICONS */
   
   .contacts #telegram-icon {
-    margin-top: 200px;
-    margin-left: 150px;
+    margin-top: 280px;
+    margin-left: 170px;
   }
   
   .contacts #mail-icon {
-    margin-top: 100px;
-    margin-left: 750px;
+    margin-top: 160px;
+    margin-left: 700px;
   }
   
   .contacts #github-icon {
@@ -477,61 +392,9 @@ canvas {
 
   /*  */
 
-  /* PROJECT NUMBERS */
-
-  .project-1 .project-number {
-    margin-left: 74%;
-    margin-top: 10%;
-  }
-  
-  .project-2 .project-number {
-    margin-left: -12.5%;
-    margin-top: 20%;
-  }
-  
-  .project-3 .project-number {
-    margin-left: 72.5%;
-    margin-top: 30%;
-  }
-  
-  .project-4 .project-number {
-    margin-left: -12.5%;
-    margin-top: 10%;
-  }
-  
-  .project-5 .project-number {
-    margin-left: 72.5%;
-    margin-top: 30%;
-  }
-
-  /*  */
-
   /* PROJECT LINKS */
 
-  .project-1 .project-link {
-    margin-left: 74.7%;
-    margin-top: 17.5%;
-  }
   
-  .project-2 .project-link {
-    margin-left: -10.5%;
-    margin-top: 27.5%;
-  }
-  
-  .project-3 .project-link {
-    margin-left: 75%;
-    margin-top: 37.5%;
-  }
-  
-  .project-4 .project-link {
-    margin-left: -10.5%;
-    margin-top: 17.5%;
-  }
-  
-  .project-5 .project-link {
-    margin-left: 74.7%;
-    margin-top: 37.5%;
-  }
 
   /*  */
 
@@ -572,114 +435,32 @@ canvas {
 
   /*  */
 
-  /* PROJECT NUMBERS */
-
-  .project-1 .project-number {
-    left: 5%;
-  }
-  
-  .project-2 .project-number {
-    left: 20.5%;
-  }
-  
-  .project-3 .project-number {
-    left: 5%;
-  }
-  
-  .project-4 .project-number {
-    left: 20.5%;
-  }
-  
-  .project-5 .project-number {
-    left: 5.3%;
-  }
-
-  /*  */
-
   /* PROJECT LINKS */
 
-  .project-1 .project-link {
-    left: 5.5%;
-    top: 23.2%;
-  }
   
-  .project-2 .project-link {
-    left: 21%;
-    top: 42.2%;
-  }
-  
-  .project-3 .project-link {
-    left: 5.5%;
-    top: 58.2%;
-  }
-  
-  .project-4 .project-link {
-    left: 21%;
-    top: 72.4%;
-  }
-  
-  .project-5 .project-link {
-    left: 5.5%;
-    top: 87%;
-  }
-
-  /*  */
-
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
-
-    /* HEADERS */
-
-  .hero-header h1 {
-    padding-top: 35%;
-    font-size: 70px;
-    line-height: 150px;
-  }
-
-  .hero-header h2 {
-    margin-top: 20%;
-  }
-
-  .hero-header h3 {
-    margin-top: 20%;
-    line-height: 50px;
-  }
-
-  .section-title {
-    margin-top: 35%;
-    font-size: 48px;
-  }
-
-  .project-title {
-    font-size: 55px;
-    padding-top: 25%;
-    padding-bottom: 5%;
-  }
 
   /*  */
 
   /* CONTACT ICONS */
   
   .contacts #telegram-icon {
-    top: -155px;
-    left: -100px;
+    top: -100px;
+    left: 45px;
   }
   
   .contacts #mail-icon {
-    top: -75px;
-    left: -455px;
+    top: -20px;
+    left: -390px;
   }
   
   .contacts #github-icon {
-    top: -525px;
-    left: -80px;
+    top: -470px;
+    left: 65px;
   }
   
   .contacts #replit-icon {
-    top: -413px;
-    left: -575px;
+    top: -358px;
+    left: -350px;
   }
 
   /*  */
@@ -697,70 +478,6 @@ canvas {
 
   #replit {
     height: 55px;
-  }
-
-  /*  */
-
-  /* PROJECT NUMBERS */
-
-  .project-number {
-    font-size: 48px;
-  }
-
-  .project-1 .project-number {
-    left: 5%;
-  }
-  
-  .project-2 .project-number {
-    left: 19.5%;
-  }
-  
-  .project-3 .project-number {
-    top: 56%;
-    left: 5%;
-  }
-  
-  .project-4 .project-number {
-    left: 19%;
-  }
-  
-  .project-5 .project-number {
-    left: 5.3%;
-    top: 86%;
-  }
-
-  /*  */
-
-  /* PROJECT LINKS */
-
-  .project-link {
-    font-size: 48px;
-    color: rgb(255, 255, 255, 0.9);
-  }
-
-  .project-1 .project-link {
-    left: 5.5%;
-    top: 22%;
-  }
-  
-  .project-2 .project-link {
-    left: 20%;
-    top: 42.2%;
-  }
-  
-  .project-3 .project-link {
-    left: 5.5%;
-    top: 56.2%;
-  }
-  
-  .project-4 .project-link {
-    left: 19.5%;
-    top: 72.5%;
-  }
-  
-  .project-5 .project-link {
-    left: 5.5%;
-    top: 86.2%;
   }
 
   /*  */
@@ -790,162 +507,365 @@ canvas {
 
 }
 
-@media (max-width: 375px) { 
+@media (max-width: 700px) { 
+
+  /* CONTACT ICONS */
+  
+  .contacts #telegram-icon {
+    top: -100px;
+    left: 45px;
+  }
+  
+  .contacts #mail-icon {
+    top: -20px;
+    left: -390px;
+  }
+  
+  .contacts #github-icon {
+    top: -470px;
+    left: 65px;
+  }
+  
+  .contacts #replit-icon {
+    top: -358px;
+    left: -350px;
+  }
+
+  /*  */
+
+  /* PROJECT LINKS */
+
+  
+
+  /*  */
+
+}
+
+@media (max-width: 650px) { 
+
+  /* CONTACT ICONS */
+  
+  .contacts #telegram-icon {
+    top: -100px;
+    left: -5px;
+  }
+  
+  .contacts #mail-icon {
+    top: -20px;
+    left: -450px;
+  }
+  
+  .contacts #github-icon {
+    top: -470px;
+    left: 15px;
+  }
+  
+  .contacts #replit-icon {
+    top: -358px;
+    left: -400px;
+  }
+
+  /*  */
+
+  /* PROJECT LINKS */
+
+  
+
+  /*  */
+
+}
+
+@media (max-width: 600px) {
+  
+  /* CONTACT ICONS */
+  
+  .contacts #telegram-icon {
+    top: -100px;
+    left: -5px;
+  }
+  
+  .contacts #mail-icon {
+    top: -20px;
+    left: -450px;
+  }
+  
+  .contacts #github-icon {
+    top: -470px;
+    left: 15px;
+  }
+  
+  .contacts #replit-icon {
+    top: -358px;
+    left: -400px;
+  }
+
+  /*  */
+
+  /* PROJECT LINKS */
+
+  
+
+  /*  */
+
+}
+
+@media (max-width: 550px) { 
+
+  /* CONTACT ICONS */
+  
+  .contacts #telegram-icon {
+    top: -100px;
+    left: -35px;
+  }
+  
+  .contacts #mail-icon {
+    top: -20px;
+    left: -470px;
+  }
+  
+  .contacts #github-icon {
+    top: -470px;
+    left: -15px;
+  }
+  
+  .contacts #replit-icon {
+    top: -358px;
+    left: -420px;
+  }
+
+  /*  */
+
+  /* PROJECT LINKS */
+
+  
+
+  /*  */
+
+}
+
+@media (max-width: 500px) { 
+
+  /* CONTACT ICONS */
+  
+  .contacts #telegram-icon {
+    top: -120px;
+    left: -65px;
+  }
+  
+  .contacts #mail-icon {
+    top: -40px;
+    left: -500px;
+  }
+  
+  .contacts #github-icon {
+    top: -490px;
+    left: -45px;
+  }
+  
+  .contacts #replit-icon {
+    top: -378px;
+    left: -450px;
+  }
+
+  /*  */
+
+  /* PROJECT LINKS */
+
+  
+
+  /*  */
+
+}
+
+@media (max-width: 450px) { 
 
   /* HEADERS */
 
-.hero-header h1 {
-  padding-top: 35%;
-  font-size: 50px;
-  line-height: 150px;
+  .hero-header h1 {
+    padding-top: 35%;
+    font-size: 60px;
+  }
+
+  /*  */
+
+  /* CONTACT ICONS */
+  
+  .contacts #telegram-icon {
+    top: -120px;
+    left: -95px;
+  }
+  
+  .contacts #mail-icon {
+    top: -40px;
+    left: -530px;
+  }
+  
+  .contacts #github-icon {
+    top: -490px;
+    left: -75px;
+  }
+  
+  .contacts #replit-icon {
+    top: -378px;
+    left: -480px;
+  }
+
+  /*  */
+
+  /* PROJECT LINKS */
+
+  
+
+  /*  */
+
 }
 
-.hero-header h2 {
-  margin-top: 15%;
+@media (max-width: 400px) { 
+
+  /* HEADERS */
+
+  .hero-header h1 {
+    padding-top: 35%;
+    font-size: 50px;
+    line-height: 150px;
+  }
+
+  .hero-header h2 {
+    margin-top: 15%;
+  }
+
+  .hero-header h3 {
+    margin-top: 15%;
+  }
+
+  .section-title {
+    margin-top: 25%;
+  }
+
+  .project-title {
+    font-size: 45px;
+    padding-top: 25%;
+    padding-bottom: 15%;
+  }
+
+  /*  */
+
+  /* CONTACT ICONS */
+
+  .contacts #telegram-icon {
+    top: -110px;
+    left: -100px;
+  }
+
+  .contacts #github-icon {
+    top: -480px;
+    left: -95px;
+  }
+
+  .contacts #mail-icon {
+    top: -30px;
+    left: -560px;
+  }
+
+  .contacts #replit-icon {
+    top: -368px;
+    left: -520px;
+  }
+
+  /*  */
+
+  /* CONTACT ICONS SIZES */
+
+  #telegram {
+    height: 40px;
+  }
+
+  #mail,
+  #github {
+    height: 80px;
+  }
+
+  #replit {
+    height: 55px;
+  }
+
+  /*  */
+
+  /* PROJECT LINKS */
+
+  .project-link {
+    font-size: 48px;
+    color: rgb(255, 255, 255, 0.9);
+  }
+
+  /*  */
+
+  /* PROJECT STACK */
+
+  .project-stack {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: start;
+    grid-template-columns: 50% 50%;
+  }
+
+  .project-stack-title {
+    font-size: 30px;
+  }
+
+  .project-2 .project-stack {
+    width: 100%;
+  }
+
+  .project-stack i {
+    justify-self: center;
+    font-size: 40px;
+    padding-bottom: 50px;
+  }
+
+  .project-stack p {
+    justify-self: center;
+    font-size: 24px;
+    padding-bottom: 50px;
+  }
+
+  /*  */
+
+  /* OTHERS */
+
+  .section-title {
+    font-size: 40px;
+  }
+
+  /*  */
+
 }
 
-.hero-header h3 {
-  margin-top: 15%;
-}
+@media (max-width: 350px) {
 
-.section-title {
-  margin-top: 25%;
-}
+  /* CONTACT ICONS */
 
-.project-title {
-  font-size: 55px;
-  padding-top: 25%;
-  padding-bottom: 15%;
-}
+  .contacts #telegram-icon {
+    top: -130px;
+    left: -120px;
+  }
 
-/*  */
+  .contacts #github-icon {
+    top: -500px;
+    left: -120px;
+  }
 
-/* CONTACT ICONS */
+  .contacts #mail-icon {
+    top: -50px;
+    left: -595px;
+  }
 
-.contacts #telegram-icon {
-  top: -130px;
-  left: -110px;
-}
+  .contacts #replit-icon {
+    top: -388px;
+    left: -565px;
+  }
 
-.contacts #mail-icon {
-  top: -50px;
-  left: -545px;
-}
-
-.contacts #github-icon {
-  top: -500px;
-  left: -90px;
-}
-
-.contacts #replit-icon {
-  top: -388px;
-  left: -495px;
-}
-
-/*  */
-
-/* CONTACT ICONS SIZES */
-
-#telegram {
-  height: 40px;
-}
-
-#mail,
-#github {
-  height: 80px;
-}
-
-#replit {
-  height: 55px;
-}
-
-/*  */
-
-/* PROJECT NUMBERS */
-
-.project-number {
-  font-size: 48px;
-}
-
-.project-1 .project-number {
-  left: 5%;
-}
-
-.project-2 .project-number {
-  left: 19.5%;
-}
-
-.project-3 .project-number {
-  top: 56%;
-  left: 5%;
-}
-
-.project-4 .project-number {
-  left: 19%;
-}
-
-.project-5 .project-number {
-  left: 5.3%;
-  top: 86%;
-}
-
-/*  */
-
-/* PROJECT LINKS */
-
-.project-link {
-  font-size: 48px;
-  color: rgb(255, 255, 255, 0.9);
-}
-
-.project-1 .project-link {
-  left: 5.5%;
-  top: 21%;
-}
-
-.project-2 .project-link {
-  left: 20%;
-  top: 41.6%;
-}
-
-.project-3 .project-link {
-  left: 5.5%;
-  top: 56.3%;
-}
-
-.project-4 .project-link {
-  left: 19.5%;
-  top: 72.9%;
-}
-
-.project-5 .project-link {
-  left: 5.5%;
-  top: 86.3%;
-}
-
-/*  */
-
-/* PROJECT STACK */
-
-.project-stack {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  justify-items: start;
-  grid-template-columns: 50% 50%;
-}
-
-.project-2 .project-stack {
-  width: 100%;
-}
-
-.project-stack i,
-.project-stack p {
-  justify-self: center;
-  font-size: 30px;
-  padding-bottom: 50px;
-}
-
-/*  */
-
+  /*  */
+  
 }
